@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://OpenSDG-tutorials.github.io/sdg-data-australia/en',
+  remoteDataBaseUrl: 'https://open-sdg-tutorials.github.io/sdg-data-tutorial/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -105,13 +105,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/sdg-site-australia/assets/js/lib/classList.js"></script>
+        <script src="/sdg-site-tutorial/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/sdg-site-australia/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/sdg-site-australia/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/sdg-site-tutorial/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/sdg-site-tutorial/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-australia/assets/css/style.css?v=20201030004543">
+        <link rel="stylesheet" href="/sdg-site-tutorial/assets/css/style.css?v=20210202144640">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -135,7 +135,7 @@ var translations = {
 <body class="language-en layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
@@ -153,8 +153,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/sdg-site-australia/" id="home">
-        <img src="/sdg-site-australia/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <a class="navbar-brand" href="/sdg-site-tutorial/" id="home">
+        <img src="/sdg-site-tutorial/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
       </a>
 
       <div class="mobile-widgets">
@@ -169,17 +169,17 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Menu</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/sdg-site-australia/goals">Goals</a>
+    <a href="/sdg-site-tutorial/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/reporting-status">Reporting Status</a>
+    <a href="/sdg-site-tutorial/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/about">About</a>
+    <a href="/sdg-site-tutorial/about">About</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/guidance">Guidance</a>
+    <a href="/sdg-site-tutorial/guidance">Guidance</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/faq">FAQ</a>
+    <a href="/sdg-site-tutorial/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/news">Updates</a>
+    <a href="/sdg-site-tutorial/news">Updates</a>
     </li></ul>
 
         </li>
@@ -188,7 +188,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Search</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/sdg-site-australia/search">
+  <form action="/sdg-site-tutorial/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Search" />
     <label class="sr-only" for="indicator_search-mobile">Search</label>
     <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -199,7 +199,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/sdg-site-australia/search">
+  <form action="/sdg-site-tutorial/search">
     <input type="text" name="q" id="indicator_search" title="Search" />
     <label class="sr-only" for="indicator_search">Search</label>
     <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -208,17 +208,17 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/sdg-site-australia/goals">Goals</a>
+    <a href="/sdg-site-tutorial/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/reporting-status">Reporting Status</a>
+    <a href="/sdg-site-tutorial/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/about">About</a>
+    <a href="/sdg-site-tutorial/about">About</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/guidance">Guidance</a>
+    <a href="/sdg-site-tutorial/guidance">Guidance</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/faq">FAQ</a>
+    <a href="/sdg-site-tutorial/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/news">Updates</a>
+    <a href="/sdg-site-tutorial/news">Updates</a>
     </li></ul>
 
 
@@ -232,7 +232,7 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/sdg-site-australia/">Home</a></li>
+  <li><a href="/sdg-site-tutorial/">Home</a></li>
   <li class="active">Goal 1</li>
   
 </ol>
@@ -254,9 +254,11 @@ var translations = {
   </div>
 </div>
 
-<div id="main-content" class="container">
+<div id="main-content" class="container" role="main">
 
   
+
+
 
   <div class="container">
     <h2>Targets and indicators</h2>
@@ -284,7 +286,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-1-1">Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-1-1">Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status complete">
               Reported online
@@ -315,7 +317,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-2-1">Proportion of population living below the national poverty line, by sex and age</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-2-1">Proportion of population living below the national poverty line, by sex and age</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -337,7 +339,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.2.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-2-2">Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-2-2">Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -368,7 +370,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-3-1">Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-3-1">Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -399,7 +401,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-4-1">Proportion of population living in households with access to basic services</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-4-1">Proportion of population living in households with access to basic services</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -421,7 +423,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.4.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-4-2">Proportion of total adult population with secure tenure rights to land, with legally recognized documentation, and who perceive their rights to land as secure, by sex and by type of tenure</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-4-2">Proportion of total adult population with secure tenure rights to land, with legally recognized documentation, and who perceive their rights to land as secure, by sex and by type of tenure</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -452,7 +454,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-5-1">Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-5-1">Number of deaths, missing persons and directly affected persons attributed to disasters per 100,000 population</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -474,7 +476,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-5-2">Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-5-2">Direct economic loss attributed to disasters in relation to global gross domestic product (GDP)</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -496,7 +498,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.3</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-5-3">Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-5-3">Number of countries that adopt and implement national disaster risk reduction strategies in line with the Sendai Framework for Disaster Risk Reduction 2015–2030</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -518,7 +520,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.5.4</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-5-4">Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-5-4">Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -549,7 +551,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.a.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-a-1">Proportion of domestically generated resources allocated by the government directly to poverty reduction programmes</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-a-1">Proportion of domestically generated resources allocated by the government directly to poverty reduction programmes</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -571,7 +573,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.a.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-a-2">Proportion of total government spending on essential services (education, health and social protection)</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-a-2">Proportion of total government spending on essential services (education, health and social protection)</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -593,7 +595,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.a.3</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-a-3">Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-a-3">Sum of total grants and non-debt-creating inflows directly allocated to poverty reduction programmes as a proportion of GDP</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -624,7 +626,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 1.b.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/1-b-1">Proportion of government recurrent and capital spending to sectors that disproportionately benefit women, the poor and vulnerable groups</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/1-b-1">Proportion of government recurrent and capital spending to sectors that disproportionately benefit women, the poor and vulnerable groups</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -661,10 +663,11 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/sdg-site-australia/about/cookies-and-privacy/">Cookies</a>
+                <a href="/sdg-site-tutorial/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
+            
             </ul>
         </div>
       </div>
@@ -697,7 +700,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-australia/assets/js/sdg.js?v=20201030004543'></script>
+<script src='/sdg-site-tutorial/assets/js/sdg.js?v=20210202144640'></script>
 
 <script>
 $(function() {
@@ -737,7 +740,8 @@ $(function() {
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations
+              graphAnnotations: domData.graphannotations,
+              indicatorDownloads: domData.indicatordownloads,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',

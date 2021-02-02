@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://OpenSDG-tutorials.github.io/sdg-data-australia/en',
+  remoteDataBaseUrl: 'https://open-sdg-tutorials.github.io/sdg-data-tutorial/en',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -105,13 +105,13 @@ var translations = {
         
 
         <!--[if IE 9]>
-        <script src="/sdg-site-australia/assets/js/lib/classList.js"></script>
+        <script src="/sdg-site-tutorial/assets/js/lib/classList.js"></script>
         <![endif]-->
 
         <!-- Favicons ================================================== -->
         <!-- 128x128 -->
-        <link rel="shortcut icon" type="image/ico" href="/sdg-site-australia/assets/img/favicons/favicon.ico">
-        <link rel="icon" type="image/png" href="/sdg-site-australia/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
+        <link rel="shortcut icon" type="image/ico" href="/sdg-site-tutorial/assets/img/favicons/favicon.ico">
+        <link rel="icon" type="image/png" href="/sdg-site-tutorial/assets/img/favicons/favicon.png"><!-- 192x192, as recommended for Android
         http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
         -->
 
@@ -121,7 +121,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/sdg-site-australia/assets/css/style.css?v=20201030004543">
+        <link rel="stylesheet" href="/sdg-site-tutorial/assets/css/style.css?v=20210202144640">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" crossorigin="">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
@@ -135,7 +135,7 @@ var translations = {
 <body class="language-en layout-goal-by-target-vertical">
 <!-- <div class="container"> -->
 
-<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World"};</script>
+<script>translations['header'] = {"alpha":"Alpha","default_contrast":"Default contrast","disable_high_contrast":"Disable high contrast","disclaimer":"This is a development website. We welcome your <a href=\"mailto:%email_address\">feedback</a>.","enable_high_contrast":"Enable high contrast","high_contrast":"High contrast","skip_link":"Skip to main content","tag_line":"17 Goals to Transform our World","toggle_menu":"Menu toggle. Click to expand or collapse the menu.","toggle_search":"Search toggle. Click to expand or collapse the search bar."};</script>
 
 <a class="sr-only sr-only-focusable" id="skiplink" href="#main-content" tabindex="0">Skip to main content</a>
 <div id="disclaimer">
@@ -153,8 +153,8 @@ var translations = {
   <div class="container">
 
     <div class="logo-and-mobile-widgets">
-      <a class="navbar-brand" href="/sdg-site-australia/" id="home">
-        <img src="/sdg-site-australia/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
+      <a class="navbar-brand" href="/sdg-site-tutorial/" id="home">
+        <img src="/sdg-site-tutorial/assets/img/SDG_logo.png" alt="Sustainable Development Goals - 17 Goals to Transform our World" />
       </a>
 
       <div class="mobile-widgets">
@@ -169,17 +169,17 @@ var translations = {
             aria-haspopup="true">
           <button data-target="menu-mobile" aria-expanded="false">Menu</button>
           <ul class="nav navbar-nav menu-target contrast-switcher" id="menu-mobile"><li class="nav-link ">
-    <a href="/sdg-site-australia/goals">Goals</a>
+    <a href="/sdg-site-tutorial/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/reporting-status">Reporting Status</a>
+    <a href="/sdg-site-tutorial/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/about">About</a>
+    <a href="/sdg-site-tutorial/about">About</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/guidance">Guidance</a>
+    <a href="/sdg-site-tutorial/guidance">Guidance</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/faq">FAQ</a>
+    <a href="/sdg-site-tutorial/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/news">Updates</a>
+    <a href="/sdg-site-tutorial/news">Updates</a>
     </li></ul>
 
         </li>
@@ -188,7 +188,7 @@ var translations = {
             aria-haspopup="true">
           <button data-target="search-mobile" aria-expanded="false">Search</button>
           <div id="search-mobile" class="menu-target">
-  <form action="/sdg-site-australia/search">
+  <form action="/sdg-site-tutorial/search">
     <input type="text" name="q" id="indicator_search-mobile" title="Search" />
     <label class="sr-only" for="indicator_search-mobile">Search</label>
     <button aria-label="Search" id="search-mobile-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -199,7 +199,7 @@ var translations = {
       </ul>
 
       <div id="search" class="menu-target">
-  <form action="/sdg-site-australia/search">
+  <form action="/sdg-site-tutorial/search">
     <input type="text" name="q" id="indicator_search" title="Search" />
     <label class="sr-only" for="indicator_search">Search</label>
     <button aria-label="Search" id="search-btn" type="submit"><i class="fa fa-search" aria-hidden="false"></i></button>
@@ -208,17 +208,17 @@ var translations = {
 
 
       <ul class="nav navbar-nav menu-target contrast-switcher" id="menu"><li class="nav-link ">
-    <a href="/sdg-site-australia/goals">Goals</a>
+    <a href="/sdg-site-tutorial/goals">Goals</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/reporting-status">Reporting Status</a>
+    <a href="/sdg-site-tutorial/reporting-status">Reporting Status</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/about">About</a>
+    <a href="/sdg-site-tutorial/about">About</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/guidance">Guidance</a>
+    <a href="/sdg-site-tutorial/guidance">Guidance</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/faq">FAQ</a>
+    <a href="/sdg-site-tutorial/faq">FAQ</a>
     </li><li class="nav-link ">
-    <a href="/sdg-site-australia/news">Updates</a>
+    <a href="/sdg-site-tutorial/news">Updates</a>
     </li></ul>
 
 
@@ -232,7 +232,7 @@ var translations = {
 <div class="container">
   <ol class="breadcrumb">
   
-  <li><a href="/sdg-site-australia/">Home</a></li>
+  <li><a href="/sdg-site-tutorial/">Home</a></li>
   <li class="active">Goal 16</li>
   
 </ol>
@@ -254,9 +254,11 @@ var translations = {
   </div>
 </div>
 
-<div id="main-content" class="container">
+<div id="main-content" class="container" role="main">
 
   
+
+
 
   <div class="container">
     <h2>Targets and indicators</h2>
@@ -284,7 +286,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.1.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-1-1">Number of victims of intentional homicide per 100,000 population, by sex and age</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-1-1">Number of victims of intentional homicide per 100,000 population, by sex and age</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -306,7 +308,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.1.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-1-2">Conflict-related deaths per 100,000 population, by sex, age and cause</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-1-2">Conflict-related deaths per 100,000 population, by sex, age and cause</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -328,7 +330,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.1.3</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-1-3">Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-1-3">Proportion of population subjected to (a) physical violence, (b) psychological violence and (c) sexual violence in the previous 12 months</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -350,7 +352,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.1.4</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-1-4">Proportion of population that feel safe walking alone around the area they live</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-1-4">Proportion of population that feel safe walking alone around the area they live</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -381,7 +383,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.2.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-2-1">Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-2-1">Proportion of children aged 1–17 years who experienced any physical punishment and/or psychological aggression by caregivers in the past month</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -403,7 +405,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.2.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-2-2">Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-2-2">Number of victims of human trafficking per 100,000 population, by sex, age and form of exploitation</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -425,7 +427,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.2.3</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-2-3">Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-2-3">Proportion of young women and men aged 18–29 years who experienced sexual violence by age 18</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -456,7 +458,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.3.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-3-1">Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-3-1">Proportion of victims of violence in the previous 12 months who reported their victimization to competent authorities or other officially recognized conflict resolution mechanisms</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -478,7 +480,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.3.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-3-2">Unsentenced detainees as a proportion of overall prison population</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-3-2">Unsentenced detainees as a proportion of overall prison population</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -509,7 +511,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.4.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-4-1">Total value of inward and outward illicit financial flows (in current United States dollars)</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-4-1">Total value of inward and outward illicit financial flows (in current United States dollars)</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -531,7 +533,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.4.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-4-2">Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-4-2">Proportion of seized, found or surrendered arms whose illicit origin or context has been traced or established by a competent authority in line with international instruments</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -562,7 +564,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.5.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-5-1">Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-5-1">Proportion of persons who had at least one contact with a public official and who paid a bribe to a public official, or were asked for a bribe by those public officials, during the previous 12 months</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -584,7 +586,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.5.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-5-2">Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-5-2">Proportion of businesses that had at least one contact with a public official and that paid a bribe to a public official, or were asked for a bribe by those public officials during the previous 12 months</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -615,7 +617,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.6.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-6-1">Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-6-1">Primary government expenditures as a proportion of original approved budget, by sector (or by budget codes or similar)</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -637,7 +639,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.6.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-6-2">Proportion of population satisfied with their last experience of public services</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-6-2">Proportion of population satisfied with their last experience of public services</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -668,7 +670,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.7.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-7-1">Proportions of positions (by sex, age, persons with disabilities and population groups) in public institutions (national and local legislatures, public service, and judiciary) compared to national distributions</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-7-1">Proportions of positions (by sex, age, persons with disabilities and population groups) in public institutions (national and local legislatures, public service, and judiciary) compared to national distributions</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -690,7 +692,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.7.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-7-2">Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-7-2">Proportion of population who believe decision-making is inclusive and responsive, by sex, age, disability and population group</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -721,7 +723,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.8.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-8-1">Proportion of members and voting rights of developing countries in international organizations</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-8-1">Proportion of members and voting rights of developing countries in international organizations</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -752,69 +754,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.9.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-9-1">Proportion of children under 5 years of age whose births have been registered with a civil authority, by age</a></span>
-            <span class="sr-only">Indicator status</span>
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
-            
-          </div>
-        
-      </div>
-    
-      
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 16.a</span>
-        </h3>
-        <span class="target-name">Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime</span>
-        
-
-          
-          
-          
-          
-          
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 16.a.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-a-1">Existence of independent national human rights institutions in compliance with the Paris Principles</a></span>
-            <span class="sr-only">Indicator status</span>
-            <span class="status notstarted">
-              Exploring data sources
-            </span>
-            
-          </div>
-        
-      </div>
-    
-      
-      <div class="row no-gutters goal-target-and-indicators">
-        <h3 class="goal-target">
-          <span class="target-number"><span class="sr-only">Target</span> 16.b</span>
-        </h3>
-        <span class="target-name">Promote and enforce non-discriminatory laws and policies for sustainable development</span>
-        
-
-          
-          
-          
-          
-          
-          
-          
-          
-
-          <div class="goal-indicator">
-            <h4>
-              <span class="indicator-number"><span class="sr-only">Indicator</span> 16.b.1</span>
-            </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-b-1">Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-9-1">Proportion of children under 5 years of age whose births have been registered with a civil authority, by age</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -845,7 +785,7 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.10.1</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-10-1">Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-10-1">Number of verified cases of killing, kidnapping, enforced disappearance, arbitrary detention and torture of journalists, associated media personnel, trade unionists and human rights advocates in the previous 12 months</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -867,7 +807,69 @@ var translations = {
             <h4>
               <span class="indicator-number"><span class="sr-only">Indicator</span> 16.10.2</span>
             </h4>
-            <span class="indicator-name"><a href="/sdg-site-australia/16-10-2">Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information</a></span>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-10-2">Number of countries that adopt and implement constitutional, statutory and/or policy guarantees for public access to information</a></span>
+            <span class="sr-only">Indicator status</span>
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+            
+          </div>
+        
+      </div>
+    
+      
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Target</span> 16.a</span>
+        </h3>
+        <span class="target-name">Strengthen relevant national institutions, including through international cooperation, for building capacity at all levels, in particular in developing countries, to prevent violence and combat terrorism and crime</span>
+        
+
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 16.a.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-a-1">Existence of independent national human rights institutions in compliance with the Paris Principles</a></span>
+            <span class="sr-only">Indicator status</span>
+            <span class="status notstarted">
+              Exploring data sources
+            </span>
+            
+          </div>
+        
+      </div>
+    
+      
+      <div class="row no-gutters goal-target-and-indicators">
+        <h3 class="goal-target">
+          <span class="target-number"><span class="sr-only">Target</span> 16.b</span>
+        </h3>
+        <span class="target-name">Promote and enforce non-discriminatory laws and policies for sustainable development</span>
+        
+
+          
+          
+          
+          
+          
+          
+          
+          
+
+          <div class="goal-indicator">
+            <h4>
+              <span class="indicator-number"><span class="sr-only">Indicator</span> 16.b.1</span>
+            </h4>
+            <span class="indicator-name"><a href="/sdg-site-tutorial/16-b-1">Proportion of population reporting having personally felt discriminated against or harassed in the previous 12 months on the basis of a ground of discrimination prohibited under international human rights law</a></span>
             <span class="sr-only">Indicator status</span>
             <span class="status notstarted">
               Exploring data sources
@@ -904,10 +906,11 @@ var translations = {
                 
                 </li>
               <li>
-                <a href="/sdg-site-australia/about/cookies-and-privacy/">Cookies</a>
+                <a href="/sdg-site-tutorial/about/cookies-and-privacy/">Cookies</a>
                 
                 </li>
               
+            
             </ul>
         </div>
       </div>
@@ -940,7 +943,7 @@ var translations = {
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/sdg-site-australia/assets/js/sdg.js?v=20201030004543'></script>
+<script src='/sdg-site-tutorial/assets/js/sdg.js?v=20210202144640'></script>
 
 <script>
 $(function() {
@@ -980,7 +983,8 @@ $(function() {
               startValues: domData.startvalues,
               graphLimits: domData.graphlimits,
               stackedDisaggregation: domData.stackeddisaggregation,
-              graphAnnotations: domData.graphannotations
+              graphAnnotations: domData.graphannotations,
+              indicatorDownloads: domData.indicatordownloads,
             }),
             view  = new indicatorView(model, {
               rootElement: '#indicatorData',
